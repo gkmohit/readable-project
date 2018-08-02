@@ -1,0 +1,283 @@
+/* Base Elements */
+html, body {
+  background-color: #f4511e;
+  color: #b91400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #b91400;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.nav {
+  background-color: #b91400;
+  padding: 25px 0;
+}
+
+.nav-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+}
+
+.nav-item a {
+  color: #FFFFFF;
+  
+}
+
+.nav-item a:hover {
+  color: #ff844c;
+}
+
+
+.all-posts {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.all-posts .post {
+  border: 3px solid #000;
+  margin: 15px 0;
+  padding: 25px 0 50px 0;
+}
+
+
+
+.post-data {
+  color: #b91400;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.post-data span .fa {
+  color: #b91400;
+  margin: 0 3px 0 10px;
+}
+
+.post-data span:first-child .fa {
+  margin-left: 0;
+}
+
+
+.post-info .post, .post-comments {
+  position: relative;
+  background-color: #ffffff;
+  border: 2px solid #b91400;
+  max-width: 700px;
+  padding: 0 15px;
+}
+
+.post-info .post-data {
+  justify-content: flex-end;
+  padding: 25px 15px;
+  align-items: center;
+}
+
+.post-info .post-data span {
+  font-weight: bold;
+  margin: 0 25px;
+}
+
+.post-info .post-title, .post-form .post-title {
+  text-align: center;
+}
+
+.post-info .post-published {
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.post-info .post-published span {
+  font-weight: 400;
+}
+
+.post-info .post-body {
+  padding: 20px;
+}
+
+
+.comments-title {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+
+
+.comment-author, .comment-body, .comment-vote {
+  padding: 5px 10px;
+}
+
+.comment-author {
+  flex-grow: 1;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.comment-date {
+  color: #b91400;
+}
+
+.comment-vote {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.comment-body {
+  flex-basis: 100%;
+}
+
+.post-controls {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+}
+
+.post-comment-control, .post-control {
+    /* margin-left: 5px; */
+    background-color: transparent;
+    border: 0;
+    font-size: 0.8em;
+    color: #b91400;
+    cursor:pointer;
+}
+
+.post-comment-button-bar {
+    position: absolute;
+    left: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    top: 0;
+    opacity: 0;
+}
+
+
+
+.sorter {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 25px auto;
+  max-width: 700px;
+}
+
+.sorter-option {
+  background-color: #ff844c;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px
+}
+
+.sorter-option:last-child {
+  border: 0;
+}
+
+.sorter-option.active {
+  background-color: #b91400;
+}
+
+
+.post-form {
+  background-color: #fff;
+  border: 1px solid #b91400;
+  margin: 25px auto;
+  max-width: 700px;
+}
+
+form {
+  padding: 25px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px 0;
+}
+
+input[type="text"], textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input {
+  flex-grow: 1;
+  padding: 0 5px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #b91400;
+  color: #FFFFFF;
+  padding: 5px;
+}
+
+
+.button-bar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+
+.create-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b91400;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: #ff844c;
+}
+
+.all-posts .post-title {
+  color: #b91400;
+}
+
+.post-comment:hover .post-comment-button-bar {
+  opacity: 1;
+}
+
+.post-comment {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid  #b91400;
+  
+  margin: 10px 10px 10px 50px;
+  flex-wrap: wrap;
+  padding: 10px;
+  position: relative;
+}

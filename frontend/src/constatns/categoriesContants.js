@@ -1,0 +1,1 @@
+export const RETRIEVE_CAT = 'RETRIEVE_CAT'
