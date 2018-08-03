@@ -6,7 +6,7 @@ export function comments(state = {}, action) {
       const comments_object = {};
 
       for (let comment of action.comments) {
-        comments_objectect[comment.id] = comment;
+        comments_object[comment.id] = comment;
       }
 
       return comments_object
